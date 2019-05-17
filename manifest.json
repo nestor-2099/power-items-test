@@ -6,8 +6,8 @@
 	"theme_color": "#FFFFFF",
 	"orientation": "portrait",
 	"display": "standalone",
-	"start_url": "https://github.com/nestor-2099/power-items-test/index.html?utm_source=web_app_manifest",
-	"scope": "https://github.com/nestor-2099/power-items-test/",
+	"start_url": "./index.html?utm_source=web_app_manifest",
+	"scope": "./",
 	"lang": "es-MX",
 	"icons": [
 		{
