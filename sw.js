@@ -11,7 +11,8 @@ const CACHE_NAME = 'v1_power_items',
     './resources/css/w3.min.css',
     './resources/css/style.min.css',
     
-    './js/main.js',
+    './resources/js/main.js',
+    './resources/js/blazy.min.js',
   ]
 
 // Durante la fase de instalación, generalmente se almacenan en caché los activos estáticos
