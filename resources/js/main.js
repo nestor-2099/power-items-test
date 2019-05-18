@@ -39,9 +39,16 @@
     });
   };
 
-  var init = function init() {
+  var serviceWorkerController = function(){
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('../sw.js');
+    }    
+  }
+
+  var init = function() {
     menuController();
     lazyLoadController();
+    serviceWorkerController();
   };
 
   init();
