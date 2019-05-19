@@ -92,9 +92,9 @@
           <input type="text" placeholder="Buscar..." name="search">
           <button type="submit"><i class="icon-search"></i></button>
         </form>
-      </div><a class="w3-bar-item w3-button" href="#">Cine</a><a class="w3-bar-item w3-button" href="#">Series</a><a class="w3-bar-item w3-button" href="#">Videojuegos</a><a class="w3-bar-item w3-button" href="#">Música</a><a class="w3-bar-item w3-button" href="#">Libros</a><a class="w3-bar-item w3-button" href="#">Lugares</a><a class="w3-bar-item w3-button" href="#">Vida</a><a class="w3-bar-item w3-button" href="#">Variedad</a><a class="w3-bar-item w3-button" href="#">Todas las notas</a>
+      </div><a class="w3-bar-item w3-button" href="#">Cine</a><a class="w3-bar-item w3-button" href="#">Series</a><a class="w3-bar-item w3-button" href="#">Videojuegos</a><a class="w3-bar-item w3-button" href="#">Música</a><a class="w3-bar-item w3-button" href="#">Libros</a><a class="w3-bar-item w3-button" href="#">Lugares</a><a class="w3-bar-item w3-button" href="#">Vida</a><a class="w3-bar-item w3-button" href="#">Variedad</a><a class="w3-bar-item w3-button" href="#">Todas las notas</a><a class="w3-bar-item w3-button" href="#">¿Quiénes somos?</a>
     </div>
-    <header>
+    <header id="header">
       <div class="w3-container w3-auto">
         <div class="w3-col s2">
           <button class="w3-button w3-xxlarge" id="menu-btn">☰</button>
@@ -150,7 +150,7 @@
           </div>
         </div>
         <div class="w3-row-padding w3-margin-top">
-          <div class="w3-col s9">
+          <div class="w3-col s12 m9">
             <div class="w3-col s12">
               <h2 class="content-title">Lo más <span>reciente</span></h2>
               <ul class="latest-news-section">
@@ -189,50 +189,63 @@
               </ul>
             </div>
             <div class="w3-col s12 more-news-section">
-              <h2>M&aacute;s <span>entradas</span></h2>
+              <h2 class="content-title">M&aacute;s <span>entradas</span></h2>
               <div class="w3-row">
-                <div class="w3-col s4 entry"><a href="http://localhost/power-items/nota/mostrar/2018-04-09/santa-clarita-la-dieta-perfect"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-1.jpg" alt="">
+                <div class="w3-col s6 m4 entry"><a href="http://localhost/power-items/nota/mostrar/2018-04-09/santa-clarita-la-dieta-perfect"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-1.jpg" alt="">
                     <h3>[Reseña] ¡Shazam! y un dios con el corazón de un niño</h3></a><a class="section-tag movies" href="#cine">Cine | <span>Reseña</span></a></div>
-                <div class="w3-col s4 entry"><a class="clearfix" href="http://localhost/power-items/nota/mostrar/2018-04-09/resena-nier-automata"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-2.jpg" alt="">
+                <div class="w3-col s6 m4 entry"><a class="clearfix" href="http://localhost/power-items/nota/mostrar/2018-04-09/resena-nier-automata"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-2.jpg" alt="">
                     <h3>[Reseña] ¡Shazam! y un dios con el corazón de un niño</h3></a><a class="section-tag games" href="#cine">Cine | <span>Reseña</span></a></div>
-                <div class="w3-col s4 entry"><a class="clearfix" href="http://localhost/power-items/nota/mostrar/2018-04-07/un-lugar-en-silencio-viviendo"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-3.jpg" alt="">
+                <div class="w3-col s6 m4 entry"><a class="clearfix" href="http://localhost/power-items/nota/mostrar/2018-04-07/un-lugar-en-silencio-viviendo"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-3.jpg" alt="">
                     <h3>[Reseña] ¡Shazam! y un dios con el corazón de un niño</h3></a><a class="section-tag games" href="#cine">Cine | <span>Reseña</span></a></div>
               </div>
               <div class="w3-row">
-                <div class="w3-col s4 entry"><a class="clearfix" href="http://localhost/power-items/nota/mostrar/2018-04-06/netflix-lanza-trailer-de-cargo"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-4.jpg" alt="">
+                <div class="w3-col s6 m4 entry"><a class="clearfix" href="http://localhost/power-items/nota/mostrar/2018-04-06/netflix-lanza-trailer-de-cargo"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-4.jpg" alt="">
                     <h3>[Reseña] ¡Shazam! y un dios con el corazón de un niño</h3></a><a class="section-tag movies" href="#cine">Cine | <span>Reseña</span></a></div>
-                <div class="w3-col s4 entry"><a class="clearfix" href="http://localhost/power-items/nota/mostrar/2018-04-05/un-lugar-en-silencio-tomo-par"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-5.jpg" alt="">
+                <div class="w3-col s6 m4 entry"><a class="clearfix" href="http://localhost/power-items/nota/mostrar/2018-04-05/un-lugar-en-silencio-tomo-par"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-5.jpg" alt="">
                     <h3>[Reseña] ¡Shazam! y un dios con el corazón de un niño</h3></a><a class="section-tag movies" href="#cine">Cine | <span>Reseña</span></a></div>
-                <div class="w3-col s4 entry"><a class="clearfix" href="http://localhost/power-items/nota/mostrar/2018-04-04/the-walking-dead-8x14-still-go"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-6.jpg" alt="">
+                <div class="w3-col s6 m4 entry"><a class="clearfix" href="http://localhost/power-items/nota/mostrar/2018-04-04/the-walking-dead-8x14-still-go"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/more-news-6.jpg" alt="">
                     <h3>[Reseña] ¡Shazam! y un dios con el corazón de un niño</h3></a><a class="section-tag places" href="#cine">Cine | <span>Reseña</span></a></div>
               </div>
             </div>
           </div>
-          <div class="w3-col s3">
+          <div class="w3-col s12 m3">
             <div class="w3-col s12">
               <h2 class="general-h2">Pr&oacute;ximos <span>eventos</span></h2>
               <ul class="upcoming-events-list">
+                <li><a href="http://poweritems.com.mx/nota/mostrar/2018-01-14/la-forma-del-agua-un-cuento-r" target="_blank"> 
+                    <h4>La forma del agua La forma del agua La forma del agua</h4></a>
+                  <div class="img-cover"><a href="http://poweritems.com.mx/nota/mostrar/2018-01-14/la-forma-del-agua-un-cuento-r" target="_blank"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/upcoming-events-1.jpg" alt=""></a>
+                    <div class="section-tag-container"><a class="section-tag movies" href="#cine">Cine</a></div>
+                  </div>
+                  <p class="event-date-since">Comienza <span>26</span> Enero</p>
+                </li>
                 <li><a href="http://poweritems.com.mx/nota/mostrar/2018-01-14/la-forma-del-agua-un-cuento-r" target="_blank">
-                    <h4>La forma del agua</h4>
-                    <div class="img-cover"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/upcoming-events-1.jpg" alt=""></div>
-                    <p class="event-date-since">Comienza <span>26</span> Enero</p></a><a class="section-tag movies" href="#cine">Cine</a></li>
-                <li><a href="http://poweritems.com.mx/nota/mostrar/2018-02-12/resena-dragon-ball-fighterz" target="_blank">
-                    <h4>Dragon Ball FighterZ</h4>
-                    <div class="img-cover"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/upcoming-events-2.jpg" alt=""></div>
-                    <p class="event-date-since">Comienza <span>26</span> Enero</p></a><a class="section-tag movies" href="#cine">Música</a></li>
-                <li><a href="http://poweritems.com.mx/nota/mostrar/2018-02-18/lady-bird-y-si-esta-es-la-mejo" target="_blank">
-                    <h4>Lady Bird</h4>
-                    <div class="img-cover"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/upcoming-events-3.jpg" alt=""></div>
-                    <p class="event-date-since">Comienza <span>26</span> Enero</p></a><a class="section-tag movies" href="#cine">Vida</a></li>
-                <li>
-                  <h4>The Walking Dead</h4>
-                  <div class="img-cover"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/upcoming-events-4.jpg" alt=""></div>
-                  <p class="event-date-since">Comienza <span>26</span> Enero</p><a class="section-tag movies" href="#cine">Videojuegos</a>
+                    <h4>La forma del agua</h4></a>
+                  <div class="img-cover"><a href="http://poweritems.com.mx/nota/mostrar/2018-01-14/la-forma-del-agua-un-cuento-r" target="_blank"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/upcoming-events-2.jpg" alt=""></a>
+                    <div class="section-tag-container"><a class="section-tag movies" href="#cine">Música</a></div>
+                  </div>
+                  <p class="event-date-since">Comienza <span>26</span> Enero</p>
+                </li>
+                <li><a href="http://poweritems.com.mx/nota/mostrar/2018-01-14/la-forma-del-agua-un-cuento-r" target="_blank">
+                    <h4>La forma del agua</h4></a>
+                  <div class="img-cover"><a href="http://poweritems.com.mx/nota/mostrar/2018-01-14/la-forma-del-agua-un-cuento-r" target="_blank"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/upcoming-events-3.jpg" alt=""></a>
+                    <div class="section-tag-container"><a class="section-tag movies" href="#cine">Música</a></div>
+                  </div>
+                  <p class="event-date-since">Comienza <span>26</span> Enero</p>
                 </li>
                 <li>
-                  <h4>Dis(enchantment)</h4>
-                  <div class="img-cover"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/upcoming-events-5.jpg" alt=""></div>
-                  <p class="event-date-since">Comienza <span>26</span> Enero</p><a class="section-tag movies" href="#cine">Series</a>
+                  <h4>La forma del agua La forma del agua La forma del agua La forma del agua La forma del agua</h4>
+                  <div class="img-cover"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/upcoming-events-4.jpg" alt="">
+                    <div class="section-tag-container"><a class="section-tag movies" href="#cine">Videojuegos</a></div>
+                  </div>
+                  <p class="event-date-since">Comienza <span>26</span> Enero</p>
+                </li>
+                <li>
+                  <h4>La forma del agua</h4>
+                  <div class="img-cover"><img class="b-lazy" src="resources/images/gui/placeholder.jpg" data-src="resources/images/home/upcoming-events-5.jpg" alt="">
+                    <div class="section-tag-container"><a class="section-tag movies" href="#cine">Videojuegos</a></div>
+                  </div>
+                  <p class="event-date-since">Comienza <span>26</span> Enero</p>
                 </li>
               </ul>
             </div>
@@ -243,12 +256,12 @@
     <footer>
       <div class="w3-container w3-auto">
         <div class="w3-row-padding w3-stretch">
-          <div class="w3-col s4">
+          <div class="w3-col s12 m4">
             <h2><span>Sobre</span> nosotros</h2>
             <p>Power Items es una plataforma digital de entretenimiento, enfocada en el análisis, cobertura, eventos, reflexiones y más.<br><br>Nos interesa compartir nuestro punto de vista sobre tópicos como videojuegos, cine, series, m&uacute;sica, libros, eventos y nuestras experiencias de vida.</p>
             <p></p><span class="span-remark">Correo electr&oacute;nico: </span><a href="mailto:equipo@poweritems.com.mx">equipo@poweritems.com.mx</a>
           </div>
-          <div class="w3-col s4">
+          <div class="w3-col s12 m4">
             <h2><span>&Uacute;ltimas</span> notas</h2>
             <ul class="footer-last-notes">
               <li><a href="http://localhost/power-items/nota/mostrar/2018-04-21/day-of-the-dead-bloodline-una">
@@ -265,19 +278,27 @@
                   </div></a></li>
             </ul>
           </div>
-          <div class="w3-col s4">
+          <div class="w3-col s12 m4">
             <h2><span>&Uacute;nete</span> a la comunidad</h2>
             <div class="social-icons-container">
-              <div class="w3-quarter"><a href="https://www.facebook.com/poweritemsmx/" target="_blank"><i class="icon-facebook-squared"></i></a></div>
-              <div class="w3-quarter"><a href="https://twitter.com/poweritemsmx" target="_blank"><i class="icon-twitter-squared"></i></a></div>
-              <div class="w3-quarter"><a href="https://www.youtube.com/channel/UCieAvBHI1SBegRbuKkNW7GQ" target="_blank"><i class="icon-youtube"></i></a></div>
-              <div class="w3-quarter"><a href="https://www.twitch.tv/poweritems" target="_blank"><i class="icon-twitch"></i></a></div>
+              <div class="w3-col s3"><a href="https://www.facebook.com/poweritemsmx/" target="_blank"><i class="icon-facebook-squared"></i></a></div>
+              <div class="w3-col s3"><a href="https://twitter.com/poweritemsmx" target="_blank"><i class="icon-twitter-squared"></i></a></div>
+              <div class="w3-col s3"><a href="https://www.youtube.com/channel/UCieAvBHI1SBegRbuKkNW7GQ" target="_blank"><i class="icon-youtube"></i></a></div>
+              <div class="w3-col s3"><a href="https://www.twitch.tv/poweritems" target="_blank"><i class="icon-twitch"></i></a></div>
             </div>
           </div>
         </div>
         <div class="w3-row-padding w3-stretch">
           <div class="w3-col s-12 footer-about">
-            <p>Power Items &copy; 2017 - 2019 | Derechos reservados | <a href="http://localhost/power-items/resources/terms/aviso_privacidad_pi_2018-05-21.pdf" target="_blank">Aviso de privacidad</a></p>
+            <ul>
+              <li>
+                <p>Power Items &copy; 2017 - 2019</p>
+              </li>
+              <li>
+                <p>Derechos reservados</p>
+              </li>
+              <li><a href="http://localhost/power-items/resources/terms/aviso_privacidad_pi_2018-05-21.pdf" target="_blank">Aviso de privacidad</a></li>
+            </ul>
           </div>
         </div>
       </div>
