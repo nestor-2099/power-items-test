@@ -17,6 +17,28 @@
 
     for (var i = 0; i < classnameClose.length; i++) {
       classnameClose[i].addEventListener('click', w3_close, false);
+    } // When the user scrolls the page, execute myFunction
+
+
+    window.onscroll = function () {
+      stickyMenu();
+    }; // Get the navbar
+
+
+    var navbar = document.getElementById("header"); // Get the offset position of the navbar
+
+    var sticky = navbar.offsetTop; // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
+    function stickyMenu() {
+      console.log('garou');
+      console.log(window.pageYOffset);
+      console.log(sticky);
+
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
     }
   };
 
@@ -39,13 +61,13 @@
     });
   };
 
-  var serviceWorkerController = function(){
+  var serviceWorkerController = function serviceWorkerController() {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('../sw.js');
-    }    
-  }
+    }
+  };
 
-  var init = function() {
+  var init = function init() {
     menuController();
     lazyLoadController();
     serviceWorkerController();
