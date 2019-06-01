@@ -63,7 +63,7 @@
 
   var serviceWorkerController = function serviceWorkerController() {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js');
+      navigator.serviceWorker.register('https://nestor-2099.github.io/power-items-test/sw.js');
     }
   };
 
