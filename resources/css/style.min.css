@@ -887,7 +887,7 @@ img.lazyload {
 @media only screen and (min-width: 420px) {
   /* ===== MORE NEWS ===== */
   .more-news-section .w3-row {
-    display: table;
+    display: block;
     height: 100%;
     text-align: justify;
     width: 100%;
@@ -1253,7 +1253,7 @@ img.lazyload {
   }
   /* ===== MORE NEWS ===== */
   .more-news-section .w3-row {
-    display: table;
+    display: block;
     height: 100%;
     text-align: justify;
     width: 100%;
