@@ -22,6 +22,7 @@
 
     window.onscroll = function () {
       stickyMenu();
+      scrollFunction();
     }; // Get the navbar
 
 
@@ -39,6 +40,24 @@
       } else {
         navbar.classList.remove("sticky");
       }
+    }
+
+    function scrollFunction() {
+      console.log('supes');
+
+      if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+        document.getElementById("topBtn").style.display = "block";
+      } else {
+        document.getElementById("topBtn").style.display = "none";
+      }
+    }
+
+    document.getElementById("topBtn").onclick = topFunction; // When the user clicks on the button, scroll to the top of the document
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
   };
 
@@ -67,10 +86,20 @@
     }
   };
 
+  var documentReadyController = function documentReadyController() {
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("loading").classList.add("fadeOut");
+      setTimeout(function () {
+        document.getElementById('body').removeChild(document.getElementById("loading"));
+      }, 1000);
+    });
+  };
+
   var init = function init() {
     menuController();
     lazyLoadController();
     serviceWorkerController();
+    documentReadyController();
   };
 
   init();
