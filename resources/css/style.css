@@ -31,16 +31,18 @@ a:hover {
   transition: all 0.2s;
 }
 .btn-orange {
-  background: #F44562;
-  border: 1px solid #F44562;
+  background: #FF6B17;
+  border: 1px solid #FF6B17;
+  color: #FFFFFF;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
 }
 .btn-orange:hover {
-  background-color: #232323 !important;
-  color: #F44562 !important;
+  background-color: #F44562 !important;
+  border: 1px solid #F44562;
+  color: #FFFFFF !important;
 }
 #loading {
   background: url('../images/gui/power-items-header-bg.jpg') repeat top center;
@@ -401,11 +403,20 @@ header .site-logo .menu-logo {
 header .site-logo .menu-logo img {
   margin: 17px auto;
   max-width: 120px;
+  transition: all 0.2s;
   width: 100%;
+}
+header .site-logo .menu-logo:hover img {
+  transform: scale(1.1);
+}
+#overlay {
+  cursor: pointer;
 }
 #sidebar {
   background: #232323;
+  display: none;
   top: 0;
+  z-index: 4;
 }
 #sidebar .search-container {
   margin: 10px auto;
@@ -477,6 +488,13 @@ footer a:hover {
   color: #F44562;
   text-decoration: none;
   transition: all 0.2s linear;
+}
+footer a.contact-link {
+  color: #FF6B17;
+  font-size: 18px;
+}
+footer a.contact-link:hover {
+  color: #F44562;
 }
 footer h2 {
   font-size: 24px;
@@ -697,6 +715,9 @@ main > .container {
   position: relative;
   width: 100%;
 }
+.top-content-elem > a {
+  transition: all 0.2s;
+}
 .top-content-elem > a img {
   left: 50%;
   min-width: 320px;
@@ -721,6 +742,7 @@ main > .container {
   line-height: 24px;
   margin: 0;
   text-shadow: 2px 2px 4px #000000;
+  transition: all 0.2s;
 }
 .top-content-elem .text h3 a {
   display: inline-block;
@@ -1027,6 +1049,13 @@ img.lazyload {
 .note-banner-section {
   position: relative;
 }
+.note-banner-section.search .img-container img {
+  min-width: 900px;
+}
+.note-banner-section.search .text {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+}
 .note-banner-section .img-container {
   overflow: hidden;
   position: relative;
@@ -1107,7 +1136,7 @@ img.lazyload {
   left: 0;
   position: absolute;
   top: 0;
-  transition: all 0.5s;
+  transition: all 0.2s;
   width: 100%;
   z-index: 2;
 }
@@ -1124,7 +1153,7 @@ img.lazyload {
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
-  transition: all 0.5s;
+  transition: all 0.2s;
   width: 100%;
   z-index: 2;
 }
@@ -1134,7 +1163,7 @@ img.lazyload {
   padding: 0;
   position: relative;
   transform: translateX(-50%);
-  transition: all 0.5s;
+  transition: all 0.2s;
   width: 100%;
 }
 .note-gallery-section .w3-col a div:hover img {
@@ -1240,7 +1269,7 @@ img.lazyload {
   padding: 5px;
   border-radius: 5px;
   font-size: 14px;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 #topBtn:hover {
   background: #F44562;
@@ -1260,6 +1289,106 @@ img.lazyload {
   color: #F44562;
   font-weight: 500;
   margin: 0 5px;
+}
+/* ===== SEARCH FORM ====== */
+#search-form .w3-col {
+  margin-bottom: 15px;
+}
+#search-form .w3-col:last-of-type {
+  margin-bottom: 0;
+}
+#search-form .type-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 10px;
+}
+#search-form .w3-button {
+  background: #FF6B17 !important;
+}
+#search-form .w3-button:hover {
+  background: #F44562 !important;
+  color: #FFFFFF !important;
+}
+/* ===== SEARCH FORM ====== */
+#contact-form fieldset {
+  padding: 16px 0;
+}
+#contact-form fieldset ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#contact-form fieldset ul li {
+  margin-bottom: 16px;
+}
+#contact-form fieldset ul li textarea {
+  resize: none;
+}
+#contact-form fieldset ul li .w3-button {
+  background: #FF6B17 !important;
+  color: #FFFFFF;
+}
+#contact-form fieldset ul li .w3-button:hover {
+  background: #F44562 !important;
+  color: #FFFFFF !important;
+}
+/* ===== ABOUT LIST ===== */
+.about-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.about-list > li {
+  margin-bottom: 16px;
+}
+.about-list > li:last-of-type {
+  margin-bottom: 0;
+}
+/* ===== TEAM LIST ===== */
+.team-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.team-list > li h4 {
+  margin-bottom: 16px;
+  text-align: left;
+}
+.team-list > li > div {
+  position: relative;
+}
+.team-list > li > div > .teammate-pic {
+  text-align: center;
+}
+.team-list > li > div > .teammate-pic img {
+  border-radius: 50%;
+}
+.team-list > li > div > .teammate-description > p {
+  margin-top: 0;
+}
+.team-list > li > div > .teammate-description span {
+  font-weight: 500;
+}
+.team-list > li > div > .teammate-description .social-list {
+  font-size: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.team-list > li > div > .teammate-description .social-list li {
+  margin-bottom: 8px;
+}
+.team-list > li > div > .teammate-description .social-list li a.facebook {
+  color: #4267b2;
+}
+.team-list > li > div > .teammate-description .social-list li a.facebook:hover {
+  color: #232323;
+}
+.team-list > li > div > .teammate-description .social-list li a.twitter {
+  color: #1da1f2;
+}
+.team-list > li > div > .teammate-description .social-list li a.twitter:hover {
+  color: #232323;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 420px) {
@@ -1431,6 +1560,18 @@ img.lazyload {
   .embed-responsive-item {
     height: 300px;
   }
+  .team-list > li > div {
+    overflow: hidden;
+  }
+  .team-list > li > div > .teammate-pic {
+    float: left;
+    margin-right: 3%;
+    width: 22%;
+  }
+  .team-list > li > div > .teammate-description {
+    float: left;
+    width: 75%;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -1535,6 +1676,16 @@ img.lazyload {
     line-height: 28px;
     margin: 15px 0;
   }
+  .note-banner-section.search .img-container img {
+    min-width: 700px;
+  }
+  .note-banner-section.search .text {
+    background: none;
+    top: unset;
+  }
+  .note-banner-section.search .text fieldset {
+    background: rgba(0, 0, 0, 0.7);
+  }
   .note-banner-section .text h1 {
     font-size: 36px;
     line-height: 42px;
@@ -1572,6 +1723,13 @@ img.lazyload {
   }
   .embed-responsive-item {
     height: 300px;
+  }
+  #search-form .w3-col {
+    margin-bottom: 0;
+    padding-right: 8px;
+  }
+  #search-form .w3-col:last-of-type {
+    padding-right: 0;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
