@@ -672,6 +672,9 @@ main > .container {
   text-align: center;
   text-transform: uppercase;
 }
+.content-title.search {
+  font-size: 15px;
+}
 .content-title::before {
   background: #FF6B17;
   content: '';
@@ -1451,6 +1454,16 @@ img.lazyload {
   .embed-responsive-item {
     height: 200px;
   }
+  .content-title {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .content-title.search {
+    font-size: 22px;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -1458,6 +1471,9 @@ img.lazyload {
   .content-title {
     font-size: 30px;
     line-height: 36px;
+  }
+  .content-title.search {
+    font-size: 30px;
   }
   .content-title::before {
     top: 2px;
@@ -1740,6 +1756,9 @@ img.lazyload {
   .content-title {
     font-size: 36px;
     line-height: 42px;
+  }
+  .content-title.search {
+    font-size: 36px;
   }
   .content-title::before {
     top: 2px;
